@@ -1,0 +1,42 @@
+.top-dashboard {
+  @apply mt-[30px] flex flex-col items-start md:flex-row md:justify-between border-b border-b-primary px-10 py-[10px];
+  h1 {
+    @apply my-3 font-bold text-4xl;
+  }
+}
+
+.skeleton {
+  @apply mt-[30px];
+}
+
+.files-container {
+  @apply mt-[30px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+  .file-item {
+    @apply col-span-1 divide-y divide-border rounded-[10px] bg-background transition shadow-md hover:shadow-lg mx-2;
+    .file-item-top {
+      @apply pt-6 px-6 flex w-full items-center justify-between space-x-6;
+      .file-item-top-avatar {
+        @apply flex-shrink-0 rounded-full h-10 w-10 bg-gradient-to-r from-primary to-blue-700;
+      }
+      .file-item-top-text-wrapper {
+        @apply flex-1 truncate;
+        .file-item-top-text-container {
+          @apply flex items-center space-x-3;
+          h3{
+            @apply truncate text-lg font-medium;
+          }
+        }
+      }
+    }
+
+    .file-item-footer {
+       @apply px-4 mt-4 flex flex-row items-center justify-between gap-4 text-gray-400 text-sm;
+       div{
+        @apply flex flex-row items-center;
+       }
+      }
+  }
+}
+.empty-list-container{
+    @apply flex flex-col items-center mt-10;
+}

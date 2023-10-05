@@ -1,0 +1,9 @@
+.dialog-content-pdf {
+  @apply w-full my-16;
+  .simple-bar {
+    @apply max-h-[calc(100cv-10rem)] mt-4;
+    .doc {
+      @apply max-h-full;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.mobile-nav {
+  @apply sm:hidden;
+  .mobile-nav-menu {
+    @apply relative z-50 h-5 w-5;
+  }
+  .open-menu {
+    @apply fixed animate-in slide-in-from-top-5 fade-in-20 inset-0 z-0 w-full;
+    ul {
+      @apply absolute bg-background border-b border-border shadow-md flex flex-col gap-3 pt-16 pb-8 w-full;
+      a {
+        @apply flex w-full font-semibold justify-center;
+      }
+    }
+  }
+}

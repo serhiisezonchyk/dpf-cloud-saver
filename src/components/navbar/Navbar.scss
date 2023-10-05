@@ -1,0 +1,12 @@
+.navbar {
+  @apply sticky h-[50px] top-0 inset-x-0 z-10 w-full border-b bg-background/5 backdrop-blur-lg transition-all;
+  .navbar-wrapper{
+    @apply flex h-full items-center justify-between p-4;
+    .navbar-medium{
+      @apply hidden sm:flex gap-2;
+      .navbar-div-item-handler{
+        @apply flex flex-row gap-2 items-center
+      }
+    }
+  }
+}

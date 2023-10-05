@@ -1,0 +1,6 @@
+.bordered-image {
+  @apply  border-[1px] bg-secondary border-border  rounded-[10px];
+  img {
+    @apply w-full h-auto rounded-[6px] border-[2px] border-border;
+  }
+}

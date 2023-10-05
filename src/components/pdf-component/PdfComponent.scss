@@ -1,0 +1,18 @@
+.pdf-component-form {
+  @apply w-full bg-background rounded-[5px] shadow flex flex-col items-center;
+  .pdf-component-top-bar {
+    @apply h-14  w-full flex items-center justify-between  border-b border-border px-2;
+    .left-side-buttons {
+      @apply flex items-center gap-2;
+    }
+    .right-side-buttons {
+      @apply space-x-2;
+    }
+  }
+  .pdf-component {
+    @apply w-full max-h-screen;
+    .simplebar {
+      @apply max-h-[calc(100vh-10rem)];
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.fake-button {
+  @apply mx-auto px-[2rem] py-2 m-[10px] items-center border-[1px] border-border shadow-md justify-center space-x-2 rounded-full hover:bg-gray-100/5;
+  p {
+    @apply text-sm text-foreground font-bold mb-0;
+  }
+}
+
+h1 {
+  @apply w-full text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-[10px];
+  span {
+    @apply text-primary;
+  }
+}
+p {
+  @apply text-gray-400 text-sm md:text-lg mb-[10px];
+}
